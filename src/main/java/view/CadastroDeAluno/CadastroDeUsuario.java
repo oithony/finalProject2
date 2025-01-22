@@ -1,21 +1,23 @@
+package view.CadastroDeAluno;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CadastroDeAluno extends JFrame{
+public class CadastroDeUsuario extends JFrame{
     private JPanel jpanelPrincipal;
+    private JTextField textFieldNome;
     private JPanel Principal;
     private JLabel jLabelTitulo;
     private JLabel jLabelNome;
-    private JTextField textFieldNome;
     private JButton buttonEnviar;
-    private JLabel jLabelIdade;
     private JTextField textFieldIdade;
+    private JLabel jLabelIdade;
 
-    public CadastroDeAluno(){
+    public CadastroDeUsuario(){
         this.setTitle("Sistema - Escola nova CB");
         this.setContentPane(jpanelPrincipal);
-        this.setSize(640,480);
+        this.setSize(1920,1080);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setVisible(true);
         buttonEnviar.addActionListener(new ActionListener() {

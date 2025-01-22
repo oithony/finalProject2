@@ -1,6 +1,6 @@
 package view.Principal;
 
-import view.CadastroDeAluno.CadastroDeAluno;
+import view.CadastroDeAluno.CadastroDeUsuario;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -9,20 +9,19 @@ import java.awt.event.ActionListener;
 public class form extends JFrame {
     public JMenuBar menuBar = new JMenuBar();
     public JPanel JpanePrincipal;
-    private JTextField textField1;
-    private JButton enviarButton;
+    private JButton cadastrarButton;
+    private JButton ediçãoButton;
 
     public form() {
-        enviarButton.addActionListener(new ActionListener() {
+        cadastrarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                    String texto = textField1.getText();
-                    JOptionPane.showInputDialog(null, texto);
-                    ;
                 }
 
         });
+
+
     }
 
     public void criacaoDoMenu(){
@@ -48,7 +47,7 @@ public class form extends JFrame {
         cadastro.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new CadastroDeAluno();
+                new CadastroDeUsuario();
             }
         });
     }
